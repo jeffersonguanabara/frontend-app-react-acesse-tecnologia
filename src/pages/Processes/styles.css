@@ -1,0 +1,95 @@
+#page-processos {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-processos .page-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#search-processos {
+  margin-top: 3.2rem;
+}
+
+#search-processos label {
+  color: var(--color-text-in-primary);
+}
+
+#search-processos button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#search-processos button:hover {
+  background: var(--color-secundary-dark);
+}
+
+#page-processos main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+.datatable-crud-demo {
+  .table-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .product-image {
+      width: 100px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .p-dialog .product-image {
+      width: 150px;
+      margin: 0 auto 2rem auto;
+      display: block;
+  }
+
+  .confirmation-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+@media (min-width: 700px) {
+  #page-processos {
+    max-width: 100vw;
+  }
+
+  #search-processos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  }
+
+  #search-processos .input-block + .input-block,
+  #search-processos .select-block + .select-block {
+    margin-top: 0;
+  }
+
+  #page-processos main {
+    padding: 3.2rem 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  
+}

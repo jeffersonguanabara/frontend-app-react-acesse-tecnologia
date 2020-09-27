@@ -1,0 +1,83 @@
+#page-signin {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#page-signin main {
+  background: var(--color-box-base);
+  width: 95%;
+  height: 100%;
+  max-width: 54rem;
+  max-height: 54rem;
+  border: 1px solid var(--color-text-complement);
+  border-radius: 0.8rem;
+  padding: 6.4rem 0.8rem;
+  overflow: hidden;
+}
+
+#page-signin main .card .card-header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#page-signin main .card .card-header img {
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.3;
+}
+
+#page-signin main .card form .card-body .card-body-header {
+  display: flex;
+  margin-top: 10%;
+  align-content: center;
+  justify-content: center;
+}
+
+#page-signin main .card form .card-body .card-body-header h3 {
+  font-size: 2.6rem;
+}
+
+#page-signin main .card form .card-body .card-body-footer button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-signin main .card form .card-body .card-body-footer button:hover {
+  background: var(--color-secundary-dark);
+}
+
+@media (min-width: 700px) {
+  #page-signin {
+    max-width: 100vw;
+  }
+
+  #page-signin main {
+    padding: 4.4rem 10.4rem;
+  }
+
+  #page-signin main .card .card-header img {
+    width: 12rem;
+    height: 12rem;
+
+  }
+}
+
