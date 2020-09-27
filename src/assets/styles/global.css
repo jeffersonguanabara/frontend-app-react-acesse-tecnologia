@@ -43,9 +43,8 @@
   
   body,
   input,
-  button,
-  textarea {
-    font: 500 1.6rem Poppins;
+  button {
+    font: 500 1.6rem Roboto;
     color: var(--color-text-base);
   }
   
